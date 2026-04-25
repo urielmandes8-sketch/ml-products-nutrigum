@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto | Tu Marca</title>
+    <style>
+        :root {
+            --primary-color: #000;
+            --accent-color: #2ecc71; /* Color de énfasis (ej. botones) */
+            --bg-light: #f9f9f9;
+            --text-main: #333;
+        }
+
+        body { font-family: 'Arial', sans-serif; margin: 0; color: var(--text-main); }
+        
+        /* Banner de Anuncios */
+        .announcement-bar { background: var(--primary-color); color: white; text-align: center; padding: 10px; font-size: 14px; }
+
+        /* Header / Navegación */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid #eee; }
+        .logo { font-weight: bold; font-size: 24px; }
+        nav a { margin: 0 15px; text-decoration: none; color: black; }
+
+        /* Contenedor Principal del Producto */
+        .product-container { display: flex; flex-wrap: wrap; padding: 40px 5%; gap: 40px; }
+        
+        /* Galería de Imágenes */
+        .product-gallery { flex: 1; min-width: 350px; }
+        .main-image { width: 100%; border-radius: 10px; background: #eee; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; }
+
+        /* Información de Compra */
+        .product-info { flex: 1; min-width: 350px; }
+        .product-title { font-size: 32px; margin-bottom: 10px; }
+        .price { font-size: 24px; color: var(--accent-color); font-weight: bold; margin-bottom: 20px; }
+        .buy-button { background: var(--primary-color); color: white; width: 100%; padding: 15px; border: none; font-size: 18px; cursor: pointer; border-radius: 5px; }
+        
+        /* Secciones de Detalles (Beneficios, Uso, FAQ) */
+        .details-section { padding: 50px 5%; background: var(--bg-light); }
+        .grid-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .detail-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+    <div class="announcement-bar">
+        🚚 ENVÍO GRATIS EN COMPRAS SUPERIORES A $X.XXX
+    </div>
+
+    <header>
+        <div class="logo">TU MARCA</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Nosotros</a>
+        </nav>
+        <div class="cart-icon">🛒</div>
+    </header>
+
+    <main class="product-container">
+        <section class="product-gallery">
+            <div class="main-image">
+                <span>[ESPACIO PARA TU FOTO PRINCIPAL]</span>
+            </div>
+            </section>
+
+        <section class="product-info">
+            <h1 class="product-title">Nombre de tu Producto</h1>
+            <p class="price">$XX.XXX</p>
+            <p class="description">Breve descripción que destaque el beneficio principal del producto.</p>
+            
+            <div style="margin-bottom: 20px;">
+                <label>Cantidad:</label>
+                <input type="number" value="1" min="1" style="padding: 10px; width: 50px;">
+            </div>
+
+            <button class="buy-button">AÑADIR AL CARRITO</button>
+        </section>
+    </main>
+
+    <section class="details-section">
+        <h2 style="text-align: center; margin-bottom: 40px;">¿Por qué elegir nuestro producto?</h2>
+        <div class="grid-details">
+            <div class="detail-card">
+                <h3>🚀 Beneficios</h3>
+                <p>Explica aquí cómo mejora el rendimiento o la salud del cliente.</p>
+            </div>
+            <div class="detail-card">
+                <h3>💡 Modo de Uso</h3>
+                <p>Instrucciones claras: cuántas dosis, en qué momento y recomendaciones.</p>
+            </div>
+            <div class="detail-card">
+                <h3>🌿 Ingredientes</h3>
+                <p>Lista de componentes destacados y transparencia de calidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 40px 5%; text-align: center; border-top: 1px solid #eee;">
+        <p>&copy; 2026 Tu Marca - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
